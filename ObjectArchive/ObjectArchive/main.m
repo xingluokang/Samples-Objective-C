@@ -9,7 +9,6 @@
 #import "FirstArchive.h"
 #import "SecondArchive.h"
 #import "Personal.h"
-#import "PropertyPlist.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
