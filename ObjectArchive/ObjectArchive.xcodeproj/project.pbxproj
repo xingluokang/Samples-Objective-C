@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D37B180C28280E8900819B85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D37B180B28280E8900819B85 /* main.m */; };
-		D37B18142828120C00819B85 /* FirstArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D37B18132828120C00819B85 /* FirstArchive.m */; };
-		D37B18172828139F00819B85 /* SecondArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D37B18162828139F00819B85 /* SecondArchive.m */; };
-		D37B181A28281B3000819B85 /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = D37B181928281B3000819B85 /* Personal.m */; };
+		D34C0B79282A54D800D7D189 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C0B74282A54D800D7D189 /* main.m */; };
+		D34C0B7A282A54D800D7D189 /* SecondArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C0B75282A54D800D7D189 /* SecondArchive.m */; };
+		D34C0B7B282A54D800D7D189 /* FirstArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C0B76282A54D800D7D189 /* FirstArchive.m */; };
+		D34C0B7C282A54D800D7D189 /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C0B77282A54D800D7D189 /* Personal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D34C0B6F282A54D800D7D189 /* Personal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personal.h; sourceTree = "<group>"; };
+		D34C0B70282A54D800D7D189 /* FirstArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstArchive.h; sourceTree = "<group>"; };
+		D34C0B71282A54D800D7D189 /* SecondArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondArchive.h; sourceTree = "<group>"; };
+		D34C0B74282A54D800D7D189 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D34C0B75282A54D800D7D189 /* SecondArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondArchive.m; sourceTree = "<group>"; };
+		D34C0B76282A54D800D7D189 /* FirstArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstArchive.m; sourceTree = "<group>"; };
+		D34C0B77282A54D800D7D189 /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
 		D37B180828280E8900819B85 /* ObjectArchive */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectArchive; sourceTree = BUILT_PRODUCTS_DIR; };
-		D37B180B28280E8900819B85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D37B18122828120C00819B85 /* FirstArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstArchive.h; sourceTree = "<group>"; };
-		D37B18132828120C00819B85 /* FirstArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstArchive.m; sourceTree = "<group>"; };
-		D37B18152828139F00819B85 /* SecondArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondArchive.h; sourceTree = "<group>"; };
-		D37B18162828139F00819B85 /* SecondArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondArchive.m; sourceTree = "<group>"; };
-		D37B181828281B3000819B85 /* Personal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Personal.h; sourceTree = "<group>"; };
-		D37B181928281B3000819B85 /* Personal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D34C0B6D282A54D800D7D189 /* ObjectArchive */ = {
+			isa = PBXGroup;
+			children = (
+				D34C0B74282A54D800D7D189 /* main.m */,
+				D34C0B70282A54D800D7D189 /* FirstArchive.h */,
+				D34C0B76282A54D800D7D189 /* FirstArchive.m */,
+				D34C0B71282A54D800D7D189 /* SecondArchive.h */,
+				D34C0B75282A54D800D7D189 /* SecondArchive.m */,
+				D34C0B6F282A54D800D7D189 /* Personal.h */,
+				D34C0B77282A54D800D7D189 /* Personal.m */,
+			);
+			path = ObjectArchive;
+			sourceTree = "<group>";
+		};
 		D37B17FF28280E8900819B85 = {
 			isa = PBXGroup;
 			children = (
-				D37B180A28280E8900819B85 /* ObjectArchive */,
+				D34C0B6D282A54D800D7D189 /* ObjectArchive */,
 				D37B180928280E8900819B85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,20 +75,6 @@
 				D37B180828280E8900819B85 /* ObjectArchive */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D37B180A28280E8900819B85 /* ObjectArchive */ = {
-			isa = PBXGroup;
-			children = (
-				D37B180B28280E8900819B85 /* main.m */,
-				D37B18122828120C00819B85 /* FirstArchive.h */,
-				D37B18132828120C00819B85 /* FirstArchive.m */,
-				D37B18152828139F00819B85 /* SecondArchive.h */,
-				D37B18162828139F00819B85 /* SecondArchive.m */,
-				D37B181828281B3000819B85 /* Personal.h */,
-				D37B181928281B3000819B85 /* Personal.m */,
-			);
-			path = ObjectArchive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,10 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37B180C28280E8900819B85 /* main.m in Sources */,
-				D37B181A28281B3000819B85 /* Personal.m in Sources */,
-				D37B18172828139F00819B85 /* SecondArchive.m in Sources */,
-				D37B18142828120C00819B85 /* FirstArchive.m in Sources */,
+				D34C0B79282A54D800D7D189 /* main.m in Sources */,
+				D34C0B7A282A54D800D7D189 /* SecondArchive.m in Sources */,
+				D34C0B7C282A54D800D7D189 /* Personal.m in Sources */,
+				D34C0B7B282A54D800D7D189 /* FirstArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

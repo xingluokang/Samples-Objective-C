@@ -9,6 +9,7 @@
 #import "FirstArchive.h"
 #import "SecondArchive.h"
 #import "Personal.h"
+#import "PropertyPlist.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -29,16 +30,17 @@ int main(int argc, const char * argv[]) {
 
         
         /******************************第一种形式******************************/
-        [FirstArchive archive];//归档
-        [FirstArchive unArchive];// 解档
+//        [FirstArchive archive];//归档
+//        [FirstArchive unArchive];// 解档
         
         
         /******************************第二种形式******************************/
-        [SecondArchive archive];//归档
-        [SecondArchive unArchive];// 解档
+//        [SecondArchive archive];//归档
+//        [SecondArchive unArchive];// 解档
         
         
         /******************************对一个类实现归档*****************************/
+        /*
         //归档
         Personal * person = [[Personal alloc] init];
         person.name = @"马斯克";
@@ -55,11 +57,21 @@ int main(int argc, const char * argv[]) {
         NSString * path = [NSHomeDirectory() stringByAppendingPathComponent:@"Personal.archiver"];
         Personal * person2 = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
         NSLog(@"person:%@",person2);
-         
+         */
+
+//        PropertyPlist * plist = [[PropertyPlist alloc] init];
+//        [plist writeToPlist];
+        
+        
+//        NSString * filePath = [[NSBundle mainBundle] pathForResource:@"shop" ofType:@"plist"];
+//        NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+//        NSArray *statusArray = [dic objectForKey:@"status"];
 
         
-        
-        
+        NSString * filePath = [[NSBundle mainBundle] pathForResource:@"PropertyPlist" ofType:@"plist"];
+        NSDictionary * dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+        NSLog(@"filePath:%@",filePath);
+        NSLog(@"dic:%@",dic);
         
     }
     return 0;
